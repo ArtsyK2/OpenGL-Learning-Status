@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build OpenGL project",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "main.cpp",
+        "src/glad.c",
+        "-Iinclude",           // glad and GLFW headers
+        "-Llib",               // path to libglfw3dll.a
+        "-lglfw3dll",          // link the GLFW dynamic import lib
+        "-lopengl32",          // link OpenGL
+        "-lgdi32",             // for window creation on Windows
+        "-o", "main.exe"       // output executable
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
