@@ -1,0 +1,1 @@
+Hey This is my second git Repo and I am still new here and experimenting and exploring Features of Git and Github. Also I would appreciate any advices regarding git/github and also about Graphic Programming.
